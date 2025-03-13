@@ -43,7 +43,7 @@ def reverse_linked_list(head)
     curr_node = temp
   end
   
-  return next_node
+  next_node
 end
 
 def num_moves(head)
@@ -65,6 +65,7 @@ def print_path_from_result(result_node)
     p curr_node.data
     curr_node = curr_node.previous
   end
+  puts # new line
 end
 
 print_path_from_result(knight_moves([0,0],[0,0]))
